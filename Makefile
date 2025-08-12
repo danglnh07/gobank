@@ -8,10 +8,10 @@ dropdb:
 	sudo docker exec -it postgres17 dropdb gobank
 
 migrateup:
-	./migrate -path db/migration -database "postgresql://root:123456@localhost:5432/gobank?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://root:123456@localhost:5432/gobank?sslmode=disable" -verbose up
 
 migratedown:
-	./migrate -path db/migration -database "postgresql://root:123456@localhost:5432/gobank?sslmode=disable" -verbose down
+	migrate -path db/migration -database "postgresql://root:123456@localhost:5432/gobank?sslmode=disable" -verbose down
 
 sqlc:
 	sqlc generate
