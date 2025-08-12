@@ -23,7 +23,7 @@ jobs:
           POSTGRES_PASSWORD: 123456
           POSTGRES_DB: gobank
         ports:
-          -5432:5432
+          - 5432:5432
         options: >-
           --health-cmd pg_isready
           --health-interval 10s
