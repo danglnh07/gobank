@@ -1,0 +1,8 @@
+# Ignore .env file
+.env
+
+# Ignore the executable file for migrate
+migrate
+
+# Ignore the internal docs
+docs/internal/*
